@@ -1,0 +1,16 @@
+.letter {
+    background-color: #464c58;
+    border : 1px solid white;
+    border-radius: 2px;
+    width : 30px;
+    padding: 1px 5px;
+    margin: 2px;
+    cursor: pointer;
+    /* flex-grow:2; */
+    flex-basis: 5%;
+}
+.used-letter{
+    color:rgb(112, 112, 112);
+    border-color: rgb(112, 112, 112);
+    background-color: #282c34;
+}

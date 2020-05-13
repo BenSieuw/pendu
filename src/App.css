@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.masque {
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-family: monospace;
+  font-size: calc(10px + 2vmin);
+  letter-spacing: 7px;
+}
+
+.letters-box {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  max-width: 700px;
+  margin: auto;
+}
+
+.sinfo {
+  color: white;
+  padding-top:10px;
+  font-size: initial;
+}
+
+.reset-button{
+  background-color: #464c58;
+  border : 1px solid white;
+  border-radius: 2px;
+  color: white;
+  font-size: calc(5px + 2vmin);
+  padding: 1.5vw 3vw;
+  cursor: pointer;
+}
+
+.score-table{
+  font-family: sans-serif;
+  max-width : 300px;
+  margin:auto;
+  margin-top: 15px;
+  color:white;
+}
+.score-table th{
+  background-color : #5b6272;
+  padding: 7px;
+  text-align:center;
+}
+.score-table td{
+  padding: 3px 20px;
+  background-color : #5b6272;
+}
+.score-table td div{
+  position:relative;
+  right:-8px;
+}
+.score-table td div.active{
+  font-weight: bold;
+  color:rgb(251, 222, 126);
+}
+
+.score-table td div.active:before {
+  content:"\A";
+  border-style: solid;
+  border-width: 7px 0 7px 12px;
+  border-color: transparent transparent transparent rgb(251, 222, 126);
+  position: absolute;
+  left: -15px;
+  top: 2px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
