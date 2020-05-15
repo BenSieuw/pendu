@@ -30,7 +30,6 @@ class App extends Component {
   // (CSS assurera de l’espacement entre les lettres pour mieux
   // visualiser le tout).
   computeDisplay(phrase, usedLetters) {
-    console.dir(usedLetters)
     return phrase.replace(
       /\w/g,
       (letter) => (usedLetters.has(letter) ? letter : '_')
@@ -39,7 +38,6 @@ class App extends Component {
 
   // Arrow fx for binding
   handleLetterClick = letter => {
-    console.log(letter)
     let {usedLetters, player1, player2, p1IsNext, guesses} = this.state
     usedLetters.add(letter)
     if (!this.state.phrase.includes(letter)) {
@@ -95,6 +93,8 @@ class App extends Component {
         ctx.beginPath();
         ctx.moveTo(180,180);
         ctx.lineTo(160,230);
+        break;
+      default :
         break;
     }
     ctx.stroke();
@@ -163,7 +163,7 @@ class App extends Component {
               />
             ))}
           </div>
-          <div class="sinfo">Click a letter or use your keyboard</div>
+          <div className="sinfo">Click a letter or use your keyboard</div>
           <ScoreTable
             guesses={this.state.guesses}
             p1IsNext={this.state.p1IsNext}

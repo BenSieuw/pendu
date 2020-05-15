@@ -6,7 +6,7 @@ const ScoreTable = ({guesses, p1IsNext, player1, player2}) => (
     <thead><tr><th>Guesses</th><th colSpan="2">Score</th></tr></thead>
     <tbody>
       <tr>
-        <td rowspan="2">{guesses}</td>
+        <td rowSpan="2">{guesses}</td>
         <td><div className={p1IsNext?"":"active"}>Player1</div></td>
         <td>{player1.score}</td>
       </tr>
@@ -18,4 +18,10 @@ const ScoreTable = ({guesses, p1IsNext, player1, player2}) => (
   </table>
 )
 
+ScoreTable.propTypes = {
+  guesses: PropTypes.number,
+  p1IsNext: PropTypes.bool,
+  player1: PropTypes.object,
+  player2: PropTypes.object,
+}
 export default ScoreTable

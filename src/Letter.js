@@ -9,4 +9,13 @@ const Letter = ({className, letter, onClick}) => (
     </div>
 )
 
+Letter.propTypes = {
+    className: PropTypes.oneOf([
+        'letter',
+        'letter used-letter',
+    ]).isRequired,
+    letter: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+}
+
 export default Letter
