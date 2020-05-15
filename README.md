@@ -1,3 +1,8 @@
+This is my first React project, an exercise from the OpenClassrooms free course.
+It recreates the famous "Pendu" game where you have to guess a word with a limited number of guesses.
+At each guess a new body part is drawn on the canvas until the body is fully drawn and the game is lost.
+Two players are competing and can score 1 point for each letter found. The score is kept after each game (win or lost).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
